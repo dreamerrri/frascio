@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 type ProductSpec = {
   sku: string;
   name: string;
@@ -7,7 +9,7 @@ type ProductSpec = {
   tags: string[];
 };
 
-const FLOOR_PRODUCTS: ProductSpec[] = [
+export const FLOOR_PRODUCTS: ProductSpec[] = [
   {
     sku: "61.01.001 — NOVO",
     name: "Novo",
@@ -83,7 +85,16 @@ const FLOOR_PRODUCTS: ProductSpec[] = [
 ];
 
 
-function ProductCard({ product }: { product: ProductSpec }) {
+function SpecRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex justify-between text-xs">
+      <span className="text-muted-foreground">{label}</span>
+      <span className="text-foreground">{value}</span>
+    </div>
+  );
+}
+
+export function ProductCard({ product }: { product: ProductSpec }) {
   return (
     <div className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200">
       <div className="h-[260px] overflow-hidden bg-muted">
@@ -110,7 +121,7 @@ function ProductCard({ product }: { product: ProductSpec }) {
         </div>
         <div className="flex flex-wrap gap-1.5">
           {product.tags.map((t) => (
-            <FeatureTag key={t}>{t}</FeatureTag>
+            <Badge key={t} variant="outline">{t}</Badge>
           ))}
         </div>
       </div>

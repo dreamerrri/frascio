@@ -1,3 +1,6 @@
+import { Badge } from "@/components/ui/badge";
+import { ArrowUpRight } from "lucide-react";
+
 function WallHung() {
   const wallImages = [
     { src: imgSculptedBlack, alt: "Sculpted black Frascio smart toilet" },

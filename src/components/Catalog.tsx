@@ -1,3 +1,6 @@
+import { ArrowUpRight } from 'lucide-react';
+import { FLOOR_PRODUCTS, ProductCard } from './Productcard';
+
 function Catalog() {
   return (
     <section id="catalog" className="bg-background py-28">

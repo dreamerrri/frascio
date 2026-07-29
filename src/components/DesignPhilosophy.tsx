@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 function DesignPhilosophy() {
   return (
     <section className="relative overflow-hidden bg-muted">

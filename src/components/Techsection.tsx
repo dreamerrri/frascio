@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 function TechSection() {
   const techs = [
     {

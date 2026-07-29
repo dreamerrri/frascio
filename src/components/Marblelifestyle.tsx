@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 function MarbleLifestyle() {
   return (
     <section className="bg-card py-28">

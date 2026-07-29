@@ -1,3 +1,7 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+
 function MultiCareM4() {
   const imageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
