@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import heroImg from "../imports/images/hero.png"
+import heroImg from "../imports/Images/Hero.png"
 
 
 

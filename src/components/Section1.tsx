@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import innovateImg from "../imports/images/innovate.png"
+import innovateImg from "../imports/Images/Innovate.png"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 export default function Section1() {
