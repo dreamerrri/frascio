@@ -9,9 +9,10 @@ import {
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-4 sticky top-0 z-10 backdrop-blur-md shadow-md" style={{backgroundColor:"#f7f5f0", opacity:"0.9"}}> 
-    
-      <span className="font-bold">Frascio</span>
+    <header className="px-6 py-4 sticky top-0 z-10 backdrop-blur-md shadow-md padding-le" style={{backgroundColor:"#f7f5f0", opacity:"0.9"}}> 
+    <div className="max-w-[1240px] mx-auto px-6 md:px-12 flex items-center justify-between">
+  
+  <span className="font-bold">Frascio</span>
 
       <NavigationMenu>
         <NavigationMenuList>
@@ -42,6 +43,8 @@ export default function Header() {
       </NavigationMenu>
 
       <Button>View Range</Button>
+    </div>
+    
     </header>
   )
 }

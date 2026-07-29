@@ -35,18 +35,20 @@ export default function Hero() {
 
 </div>
 
-<div className="flex items-center justify-between px-6 py-4">
-<div>
+
+
+<div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2"> 
+<div className="py-7 px-6 border-r border-border text-center">
     Self Cleean
 </div>
 
-<div>
+<div className="py-7 px-6 border-r border-border text-center">
     Self Cleean
 </div>
-<div>
+<div className="py-7 px-6 border-r border-border text-center">
     Self Cleean
 </div>
-<div>
+<div className="py-7 px-6 border-r border-border text-center">
     Self Cleean
 </div>
 </div>
