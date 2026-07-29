@@ -1,7 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
+import imgSculptedBlack from "../imports/Images/d7c70c4e0f2da15c0be8fb0823a953bb063b929e.png";
+import imgDarkBathroom from "../imports/Images/e39ed36c6960b0bb28d888c19d8628515872aaeb.png";
+import imgWallHungMountain from "../imports/Images/e8f4464daf4055df4299a7de94965a69a5e4ce8c.png";
+import imgWallHungConcrete from "../imports/Images/ec882564b773ece6c15016c23ffa3076e60b22ae.png";
+import imgWallHungFrame from "../imports/Images/fca5ca985766d6f27eca1cde0ca3d1c18220b068.png";
+import imgWallHungRound from "../imports/Images/bgpic.png";
 
-function WallHung() {
+export function WallHung() {
   const wallImages = [
     { src: imgSculptedBlack, alt: "Sculpted black Frascio smart toilet" },
     { src: imgDarkBathroom, alt: "Frascio smart toilet in dark styled bathroom" },

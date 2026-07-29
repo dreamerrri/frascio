@@ -1,6 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import imgAirFreshener from "../imports/Images/9752d9d15e03aafad88a8fab2656e825eb6b1893.png";
+import imgVortexBowl from "../imports/Images/a5d1a19d4b6c09bf33461f6f74b9e905b92d6e5b.png";
+import imgUvSpray from "../imports/Images/a8f8be2af4ec664aff0c6d4b0246d1677ca59ed1.png";
+import imgWaterPressure from "../imports/Images/c2ac40490afa9bdc94b9fa46d2236e1c3b4181e0.png";
 
-function TechSection() {
+export function TechSection() {
   const techs = [
     {
       img: imgAirFreshener,

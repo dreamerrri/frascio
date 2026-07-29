@@ -1,8 +1,11 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import imgMultiCareM4Wall from "../imports/Images/44bbd962e7c06cb6f3b70c448941580c8fdd4599.png";
+import imgMultiCareDial from "../imports/Images/50b92c996d0714c96138cb21691c73c7e67b25c3.png";
+import imgIlluminatedDial from "../imports/Images/53e675b9b8d4a355c0e1756cc8d2f0cb1909f3c8.png";
 
-function MultiCareM4() {
+export default function MultiCare() {
   const imageRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const imageInView = useInView(imageRef, { once: true, margin: "-100px" });

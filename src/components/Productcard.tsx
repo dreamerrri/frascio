@@ -1,4 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import imgNovo from "../imports/Images/6296324342396eb5facb81c95e30038a9fc8f5ea.png";
+import imgLumi from "../imports/Images/6a031618f9f7b8194f00db4ef0c91d19894cd855.png";
+import imgMultiCare from "../imports/Images/6af35d251c356ee05d4766d8b19bef1aae6981ac.png";
+import imgZenn from "../imports/Images/703a1a3517e2967e57e491f14ef8a0616137b67a.png";
+import imgVortex from "../imports/Images/7170c67934ef78bc5e644767823d82e4179e4b2a.png";
+import imgPure from "../imports/Images/9296b9c5daf3b00f9ff39e45ff052303c8443691.png";
 
 type ProductSpec = {
   sku: string;

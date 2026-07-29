@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
   return (
     <footer className="bg-card border-t border-border py-16 bg-black">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">

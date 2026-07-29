@@ -1,6 +1,9 @@
 import { Badge } from "@/components/ui/badge";
+import imgDialWindow from "../imports/Images/04896afff04dac3a5bd322a00ed40e6e1f7ad996.png";
+import imgInternalTank from "../imports/Images/0fdd13c517313b142192b642e1b7c1cbd8680a54.png";
+import imgMarbleBathroom from "../imports/Images/43a74f1f7107adba90cabe212f9b4c14f06ab9d6.png";
 
-function MarbleLifestyle() {
+export function MarbleLifestyle() {
   return (
     <section className="bg-card py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_520px] gap-16 items-center">

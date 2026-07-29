@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { FLOOR_PRODUCTS, ProductCard } from './Productcard';
 
-function Catalog() {
+export function Catalog() {
   return (
     <section id="catalog" className="bg-background py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">

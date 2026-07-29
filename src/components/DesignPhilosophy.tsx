@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
+import imgMountainWindow from "../imports/Images/0154063504c2d2d8c2d9e9936a2d6d60597c113d.png";
 
-function DesignPhilosophy() {
+export function DesignPhilosophy() {
   return (
     <section className="relative overflow-hidden bg-muted">
       <div className="h-[520px] relative">
