@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import heroImg from "../imports/images/hero.png"
 
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+
 
 export default function Hero() {
   return (
