@@ -29,6 +29,9 @@ const imgWallHungMountain = "https://images.unsplash.com/photo-1502672260266-1c1
 const imgWallHungConcrete = "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=500&fit=crop";
 const imgWallHungFrame = "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=500&fit=crop";
 const imgWallHungRound = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=500&fit=crop";
+const imgDialWindow = "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&h=600&fit=crop";
+const imgInternalTank = "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&h=600&fit=crop";
+const imgMarbleBathroom = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop";
 
 // ─── Shared primitives ────────────────────────────────────────────────────────
 function Badge({ children }: { children: React.ReactNode }) {
@@ -482,6 +485,48 @@ function WallHung() {
   );
 }
 
+function MarbleLifestyle() {
+  return (
+    <section className="bg-card py-28">
+      <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_520px] gap-16 items-center">
+        <div>
+          <Badge>Craftsmanship</Badge>
+          <h2 className="font-['Space_Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
+            Where material and form converge.
+          </h2>
+          <div className="space-y-4 font-['Inter'] text-[15px] leading-[1.65] text-muted-foreground mb-8">
+            <p>
+              Frascio surfaces are treated with a proprietary nano-glaze — an ultra-thin hydrophilic coating that bonds to the ceramic at a molecular level. The result is a surface that resists mineral scale, soap residue, and bacterial adhesion with no cleaning agents required.
+            </p>
+            <p>
+              Paired with the Frascio Connect ecosystem, every model supports voice, app, and remote control — ensuring your bathroom hardware evolves with you rather than against you.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { img: imgDialWindow, alt: "Frascio control dial detail against a window" },
+              { img: imgInternalTank, alt: "Internal water tank cutaway" },
+            ].map((item) => (
+              <div key={item.alt} className="rounded-lg overflow-hidden bg-muted h-[180px]">
+                <img src={item.img} alt={item.alt} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="rounded-lg overflow-hidden bg-muted h-[580px]">
+          <img
+            src={imgMarbleBathroom}
+            alt="Frascio smart toilet in marble bathroom"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
 // ─── Footer ───────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -505,32 +550,32 @@ function Footer() {
             </p>
           </div>
           <div className="flex flex-col items-start md:items-end gap-5">
-  <p className="font-['Inter'] text-[15px] leading-[1.65] text-background/60 max-w-[360px] md:text-right">
-    Explore the complete 2026 collection — or speak with a Frascio specialist
-    about specifying the right model for your space.
-  </p>
-  <a
-    href="#"
-    className="inline-flex items-center gap-2 font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase bg-background text-foreground px-6 py-3.5 rounded-full hover:opacity-80 transition-opacity"
-  >
-    Get in touch{" "}
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={12}
-      height={12}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="lucide lucide-arrow-right"
-    >
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
-  </a>
-</div>
+              <p className="font-['Inter'] text-[15px] leading-[1.65] text-background/60 max-w-[360px] md:text-right">
+                Explore the complete 2026 collection — or speak with a Frascio specialist
+                about specifying the right model for your space.
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase bg-background text-foreground px-6 py-3.5 rounded-full hover:opacity-80 transition-opacity"
+              >
+                Get in touch{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={12}
+                  height={12}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-arrow-right"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           {/* <div>
             <h4 className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
               Products
@@ -643,6 +688,7 @@ function App() {
         <Catalog />
         <TechSection />
         <WallHung />
+        <MarbleLifestyle />
       </main>
       <Footer />
     </div>
