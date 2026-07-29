@@ -525,8 +525,6 @@ function MarbleLifestyle() {
   );
 }
 
-
-
 // ─── Footer ───────────────────────────────────────────────────────────────────
 function Footer() {
   return (
