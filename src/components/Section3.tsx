@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button"
-import innovateImg from "../imports/Images/Innovate.png"
+
 import bgImg from "../imports/Images/bgpic.png"
 
 
