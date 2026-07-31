@@ -1,6 +1,6 @@
 
 import section5Img from "../imports/Images/section5.png"
-
+import { Badge } from "@/components/ui/badge"
 
 export default function Section5() {
   return (
@@ -17,7 +17,10 @@ export default function Section5() {
 
 
         <div className="flex flex-col gap-4">
-                  <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Energy-Saving Comfort</span> 
+               <div className="flex items-center">
+                 <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+                 <Badge className="ml-2">Energy-Saving Comfort</Badge>
+               </div> 
  <h1 className="font-semibold text-[50px]" >Intelligent efficiency, whisper-quiet performance.</h1>
          
 

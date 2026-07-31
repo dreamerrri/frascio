@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import heroImg from "../imports/Images/Hero.png"
-
+import { Badge } from "@/components/ui/badge"
 
 
 export default function Hero() {
@@ -12,7 +12,8 @@ export default function Hero() {
       
 
       <div className="py-16">
-        <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Frascio Sanitary 2026 collection</span> 
+                  <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+        <Badge className="ml-2">Frascio Sanitary 2026 collection</Badge> 
          <h1 className="font-['Space_Grotesk'] font-semibold text-[64px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7">
             Comfort is{" "}
             <span className="text-accent" style={{color:"#3fbfc7"}}>essential luxury.</span>

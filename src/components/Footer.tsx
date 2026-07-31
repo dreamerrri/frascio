@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 export function Footer() {
   return (
     <footer className="border-t border-border py-16 bg-black">
@@ -6,16 +8,15 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-baseline gap-2 mb-auto">
               <div>
-                <p className="font-['IBM Plex Mono'] text-[11px] tracking-[0.12em] uppercase text-accent mb-5">
-                  Frascio Sanitary — 2026 Collection
-                </p>
+                <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+               <Badge className="ml-2">Frascio Sanitary — 2026 Collection</Badge>
 
                 <h2 className="font-['Space Grotesk'] font-semibold text-[56px] md:text-[64px] leading-[1.05] tracking-[-0.02em] text-background">
-                  Comfort is <span className="text-accent">essential luxury.</span>
+                  Comfort is <span className="text-[#3fbfc7]">essential luxury.</span>
                 </h2>
               </div>
             </div>
-            <p className="font-['Inter'] text-[14px] leading-[1.6] text-muted-foreground max-w-[320px] text-gray-500 ">
+            <p className="font-['Inter'] text-[14px] leading-[1.6] max-w-[320px] text-[#3fbfc7] ">
               Premium smart sanitary ware engineered for comfort, efficiency, and timeless design.
             </p>
           </div>

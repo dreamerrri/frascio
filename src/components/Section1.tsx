@@ -1,5 +1,6 @@
 
 import innovateImg from "../imports/Images/Innovate.png"
+import { Badge } from "@/components/ui/badge"
 
 
 export default function Section1() {
@@ -17,8 +18,11 @@ export default function Section1() {
 
 
         <div className="flex flex-col gap-4">
-                  <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Innovating Everyday</span> 
- <h1 className="font-semibold text-[50px]" >Every detail, redrawn from first principles.</h1>
+                    <div className="flex items-center">
+                      <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+                      <Badge className="ml-2">Innovating Everyday</Badge>
+                    </div> 
+                  <h1 className="font-semibold text-[50px]" >Every detail, redrawn from first principles.</h1>
          
 
           With decades of sanitary ware expertise and persistent innovative ingenuity, Frascio stands at the forefront of premium bathroom innovation — crafting sophisticated solutions that redefine daily hygiene, comfort and lifestyle quality.

@@ -36,7 +36,8 @@ export function TechSection() {
     <section className="bg-card py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
         <div className="mb-14">
-          <Badge>Core Technology</Badge>
+                         <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+          <Badge className="ml-2">Core Technology</Badge>
           <h2 className="font-['Space Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-4 max-w-[520px]">
             Built to outlast, engineered to surprise.
           </h2>
