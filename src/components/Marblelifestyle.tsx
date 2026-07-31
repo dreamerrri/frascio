@@ -8,7 +8,8 @@ export function MarbleLifestyle() {
     <section className="bg-card py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_520px] gap-16 items-center">
         <div>
-          <Badge>Craftsmanship</Badge>
+          <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+          <Badge className="ml-2">Craftsmanship</Badge>
           <h2 className="font-['Space Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
             Where material and form converge.
           </h2>

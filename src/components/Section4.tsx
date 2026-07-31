@@ -1,6 +1,6 @@
 
 import section4Img from "../imports/Images/section4.png"
-
+import { Badge } from "@/components/ui/badge"
 
 
 export default function section4() {
@@ -12,7 +12,10 @@ export default function section4() {
       
 
       <div className="py-16 ">
-        <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Flagship — Insignia</span> 
+       <div className="flex items-center">
+         <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+         <Badge className="ml-2">Flagship — Insignia</Badge>
+       </div> 
         <h1 className="font-semibold text-[50px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7">The ultimate smart toilet.
         </h1>
     Frascio Insignia is engineered to deliver a peerless sanctuary experience within the bathroom space — tailored for connoisseurs chasing the apex of technological refinement.

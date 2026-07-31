@@ -127,7 +127,7 @@ export function ProductCard({ product }: { product: ProductSpec }) {
         </div>
         <div className="flex flex-wrap gap-1.5">
           {product.tags.map((t) => (
-            <Badge key={t} variant="outline">{t}</Badge>
+            <Badge key={t} variant="default">{t}</Badge>
           ))}
         </div>
       </div>
