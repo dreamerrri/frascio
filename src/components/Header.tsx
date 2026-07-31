@@ -17,32 +17,35 @@ export default function Header() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
-              INSIGINIA
+            <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()} >
+             <span className="font-['IBM_Plex_Mono'] "> INSIGINIA </span>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuLink href="/about" className={navigationMenuTriggerStyle()}>
-              MULTICARE
+               <span className="font-['IBM_Plex_Mono'] "> MULTICARE </span>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuLink href="#catalog" className={navigationMenuTriggerStyle()}>
-              CATALOG
+             <span className="font-['IBM_Plex_Mono'] "> CATALOG </span>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuLink href="/contact" className={navigationMenuTriggerStyle()}>
-              COMFORT
+              <span className="font-['IBM_Plex_Mono'] "> COMFORT </span>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
 
-      <Button>View Range</Button>
+      <Button>
+         <span className="font-['IBM_Plex_Mono'] ">  View Range </span>
+       
+        </Button>
     </div>
     
     </header>
