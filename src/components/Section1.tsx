@@ -26,7 +26,7 @@ export default function Section1() {
 Our ingenuity is fully embodied in our flagship smart toilets. A built-in boost structure achieves zero water-pressure limitation, delivering stable, strong flushing performance in any household plumbing condition, while an embedded fragrance tablet keeps the air soft, fresh and lingering.
 
 Cutting-edge smart technology, optimised engineering, and premium high-grade materials — balanced to turn ordinary bathroom moments into an exquisite, comfortable ritual.
-          <Button>Explore the Range</Button>
+          
         </div>
 
       </div>

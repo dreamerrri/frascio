@@ -6,12 +6,12 @@ import section4Img from "../imports/Images/section4.png"
 export default function section4() {
   return (
 
-   <section className="bg-white pt-[110px] pb-0 overflow-hidden">
+   <section className="bg-white pt-[110px] pb-0 overflow-hidden ">
      
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-8 items-center min-h-[560px]">
       
 
-      <div className="py-16">
+      <div className="py-16 ">
         <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Flagship — Insignia</span> 
         <h1 className="font-semibold text-[50px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7">The ultimate smart toilet.
         </h1>
