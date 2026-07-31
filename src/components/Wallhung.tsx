@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
+
 import imgSculptedBlack from "../imports/Images/Multipic1.png";
 import imgDarkBathroom from "../imports/Images/Multipic1.png";
 import imgWallHungMountain from "../imports/Images/Multipic1.png";
