@@ -111,7 +111,7 @@ export function ProductCard({ product }: { product: ProductSpec }) {
         />
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] text-accent mb-1.5">
+        <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] text-black mb-1.5">
           {product.sku}
         </p>
         <h3 className="font-['Space_Grotesk'] font-semibold text-[22px] tracking-[-0.01em] text-foreground mb-2">

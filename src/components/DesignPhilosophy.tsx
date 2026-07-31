@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import imgMountainWindow from "../imports/Images/0154063504c2d2d8c2d9e9936a2d6d60597c113d.png";
+import imgMountainWindow from "../imports/Images/bg7.png";
 
 export function DesignPhilosophy() {
   return (
