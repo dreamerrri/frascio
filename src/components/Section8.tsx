@@ -3,10 +3,10 @@ import heroImg from "../imports/Images/Hero.png"
 
 export default function Section8() {
   return (
-    <section className=" pt-[110px]pb-0 overflow-hidden">
+    <section className=" py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
 
-        <div className="col-span-2 flex items-end justify-between mb-14 gap-8">
+        <div className="flex items-end justify-between mb-14 gap-8">
           <span className="font-semibold text-[10px]" style={{ color: "#3fbfc7" }}>
             Frascio Sanitary 2026 collection
           </span>
