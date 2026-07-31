@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import imgMultiCareM4Wall from "../imports/Images/Section6-1.png";
+import imgMultiCareM4Wall from "../imports/Images/Multipic1.png";
 import imgMultiCareDial from "../imports/Images/Section6-2.png";
 import imgIlluminatedDial from "../imports/Images/bgpic.png";
 
@@ -42,7 +42,7 @@ export default function MultiCare() {
           className="pt-4"
         >
           <Badge>MultiCare M4</Badge>
-          <h2 className="font-['Space_Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
+          <h2 className="font-['Space Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
             {"Today's technology, for everyone."}
           </h2>
           <div className="space-y-4 font-['Inter'] text-[15px] leading-[1.65] text-muted-foreground">

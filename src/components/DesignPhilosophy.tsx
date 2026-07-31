@@ -13,7 +13,7 @@ export function DesignPhilosophy() {
         <div className="absolute inset-0 bg-gradient-to-t from-[rgba(15,17,19,0.7)] via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 max-w-[1240px] mx-auto px-6 md:px-12 pb-12">
           <Badge>Design Philosophy</Badge>
-          <h2 className="font-['Space_Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-white mt-4 max-w-[560px] mb-4">
+          <h2 className="font-['Space Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-white mt-4 max-w-[560px] mb-4">
             We look to nature, not machines.
           </h2>
           <p className="font-['Inter'] text-[14.5px] leading-[1.6] text-white/70 max-w-[460px]">

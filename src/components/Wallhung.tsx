@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
-import imgSculptedBlack from "../imports/Images/d7c70c4e0f2da15c0be8fb0823a953bb063b929e.png";
-import imgDarkBathroom from "../imports/Images/e39ed36c6960b0bb28d888c19d8628515872aaeb.png";
-import imgWallHungMountain from "../imports/Images/a8f8be2af4ec664aff0c6d4b0246d1677ca59ed1.png";
-import imgWallHungConcrete from "../imports/Images/ec882564b773ece6c15016c23ffa3076e60b22ae.png";
-import imgWallHungFrame from "../imports/Images/6af35d251c356ee05d4766d8b19bef1aae6981ac.png";
+import imgSculptedBlack from "../imports/Images/Multipic1.png";
+import imgDarkBathroom from "../imports/Images/Multipic1.png";
+import imgWallHungMountain from "../imports/Images/Multipic1.png";
+import imgWallHungConcrete from "../imports/Images/Multipic1.png";
+import imgWallHungFrame from "../imports/Images/Multipic1.png";
 import imgWallHungRound from "../imports/Images/bgpic.png";
 
 export function WallHung() {
@@ -23,16 +23,16 @@ export function WallHung() {
         <div className="flex items-end justify-between mb-12 gap-8">
           <div>
             <Badge>Wall-Hung Series</Badge>
-            <h2 className="font-['Space_Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-4">
-              Floating elegance.
+            <h2 className="font-['Space Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-4">
+              Suspended. Considered.
             </h2>
           </div>
-          <a
-            href="#"
-            className="hidden md:flex items-center gap-2 font-['IBM_Plex_Mono'] text-[10.5px] tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground transition-colors shrink-0"
+          <span
+            className="hidden md:flex items-center gap-2 font-['IBM Plex Mono'] text-[10.5px] tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground transition-colors shrink-0"
           >
-            View collection <ArrowUpRight size={12} />
-          </a>
+            Floor-to-ceiling installation flexibility. The same dial. A lighter footprint.
+
+          </span>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
           {wallImages.map((img, i) => (

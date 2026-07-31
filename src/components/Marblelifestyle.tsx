@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
-import imgDialWindow from "../imports/Images/6a031618f9f7b8194f00db4ef0c91d19894cd855.png";
-import imgInternalTank from "../imports/Images/d7c70c4e0f2da15c0be8fb0823a953bb063b929e.png";
-import imgMarbleBathroom from "../imports/Images/43a74f1f7107adba90cabe212f9b4c14f06ab9d6.png";
+import imgDialWindow from "../imports/Images/OTHER.png";
+import imgInternalTank from "../imports/Images/OTHER.png";
+import imgMarbleBathroom from "../imports/Images/OTHER.png";
 
 export function MarbleLifestyle() {
   return (
@@ -9,7 +9,7 @@ export function MarbleLifestyle() {
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_520px] gap-16 items-center">
         <div>
           <Badge>Craftsmanship</Badge>
-          <h2 className="font-['Space_Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
+          <h2 className="font-['Space Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
             Where material and form converge.
           </h2>
           <div className="space-y-4 font-['Inter'] text-[15px] leading-[1.65] text-muted-foreground mb-8">

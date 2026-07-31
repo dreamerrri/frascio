@@ -6,11 +6,11 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-baseline gap-2 mb-auto">
               <div>
-                <p className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.12em] uppercase text-accent mb-5">
+                <p className="font-['IBM Plex Mono'] text-[11px] tracking-[0.12em] uppercase text-accent mb-5">
                   Frascio Sanitary — 2026 Collection
                 </p>
 
-                <h2 className="font-['Space_Grotesk'] font-semibold text-[56px] md:text-[64px] leading-[1.05] tracking-[-0.02em] text-background">
+                <h2 className="font-['Space Grotesk'] font-semibold text-[56px] md:text-[64px] leading-[1.05] tracking-[-0.02em] text-background">
                   Comfort is <span className="text-accent">essential luxury.</span>
                 </h2>
               </div>
@@ -26,7 +26,7 @@ export function Footer() {
               </p>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase bg-background text-foreground px-6 py-3.5 rounded-full hover:opacity-80 transition-opacity"
+                className="inline-flex items-center gap-2 font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase bg-background text-foreground px-6 py-3.5 rounded-full hover:opacity-80 transition-opacity"
               >
                 Get in touch{" "}
                 <svg
@@ -47,7 +47,7 @@ export function Footer() {
               </a>
             </div>
           {/* <div>
-            <h4 className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
+            <h4 className="font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
               Products
             </h4>
             <ul className="space-y-2">
@@ -61,7 +61,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
+            <h4 className="font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
               Company
             </h4>
             <ul className="space-y-2">
@@ -77,49 +77,49 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="font-['Space_Grotesk'] font-bold text-[22px] tracking-tight text-foreground leading-none text-white">
+          <span className="font-['Space Grotesk'] font-bold text-[22px] tracking-tight text-foreground leading-none text-white">
                 Frascio
               </span>
             <nav className="flex flex-wrap gap-6">
                 <a
                   href="#"
-                  className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   Insignia
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   MultiCare
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   Catalog
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
                 >
                   Comfort
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
                 >
                   Contact
                 </a>
               </nav>
 
-          <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground text-gray-600">
+          <p className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground text-gray-600">
             © 2026 Frascio. All rights reserved.
           </p>
           
           <div className="flex gap-6 text-gray-600">
             {["Privacy", "Terms", "Cookies"].map((item) => (
-              <a key={item} href="#" className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground transition-colors">
+              <a key={item} href="#" className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground transition-colors">
                 {item}
               </a>
             ))}

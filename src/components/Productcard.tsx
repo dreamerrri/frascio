@@ -1,10 +1,10 @@
 import { Badge } from "@/components/ui/badge";
-import imgNovo from "../imports/Images/6296324342396eb5facb81c95e30038a9fc8f5ea.png";
-import imgLumi from "../imports/Images/6a031618f9f7b8194f00db4ef0c91d19894cd855.png";
-import imgMultiCare from "../imports/Images/6af35d251c356ee05d4766d8b19bef1aae6981ac.png";
-import imgZenn from "../imports/Images/703a1a3517e2967e57e491f14ef8a0616137b67a.png";
-import imgVortex from "../imports/Images/50b92c996d0714c96138cb21691c73c7e67b25c3.png";
-import imgPure from "../imports/Images/9296b9c5daf3b00f9ff39e45ff052303c8443691.png";
+import imgNovo from "../imports/Images/Catpic1.png";
+import imgLumi from "../imports/Images/Catpic2.png";
+import imgMultiCare from "../imports/Images/Catpic3.png";
+import imgZenn from "../imports/Images/Multipic1.png";
+import imgVortex from "../imports/Images/Catpic5.png";
+import imgPure from "../imports/Images/Catpic4.png";
 
 type ProductSpec = {
   sku: string;
@@ -111,10 +111,10 @@ export function ProductCard({ product }: { product: ProductSpec }) {
         />
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.08em] text-black mb-1.5">
+        <p className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] text-black mb-1.5">
           {product.sku}
         </p>
-        <h3 className="font-['Space_Grotesk'] font-semibold text-[22px] tracking-[-0.01em] text-foreground mb-2">
+        <h3 className="font-['Space Grotesk'] font-semibold text-[22px] tracking-[-0.01em] text-foreground mb-2">
           {product.name}
         </h3>
         <p className="font-['Inter'] text-[13px] leading-[1.6] text-muted-foreground mb-5 flex-1">

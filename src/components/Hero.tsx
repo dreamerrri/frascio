@@ -13,7 +13,7 @@ export default function Hero() {
 
       <div className="py-16">
         <span className="font-semibold text-[10px] " style={{color:"#3fbfc7"}}>Frascio Sanitary 2026 collection</span> 
-        <h1 className="font-['Space_Grotesk'] font-semibold text-[64px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7">Comfort is 
+        <h1 className="font-['Space Grotesk'] font-semibold text-[64px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7">Comfort is 
            <span className="font-semibold text-[50px]" style={{color:"#3fbfc7"}}>essential luxury.</span> 
         </h1>
         
