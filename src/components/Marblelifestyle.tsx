@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import imgDialWindow from "../imports/Images/04896afff04dac3a5bd322a00ed40e6e1f7ad996.png";
-import imgInternalTank from "../imports/Images/0fdd13c517313b142192b642e1b7c1cbd8680a54.png";
+import imgDialWindow from "../imports/Images/6a031618f9f7b8194f00db4ef0c91d19894cd855.png";
+import imgInternalTank from "../imports/Images/d7c70c4e0f2da15c0be8fb0823a953bb063b929e.png";
 import imgMarbleBathroom from "../imports/Images/43a74f1f7107adba90cabe212f9b4c14f06ab9d6.png";
 
 export function MarbleLifestyle() {

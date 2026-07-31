@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import imgMultiCareM4Wall from "../imports/Images/44bbd962e7c06cb6f3b70c448941580c8fdd4599.png";
+import imgMultiCareM4Wall from "../imports/Images/9752d9d15e03aafad88a8fab2656e825eb6b1893.png";
 import imgMultiCareDial from "../imports/Images/50b92c996d0714c96138cb21691c73c7e67b25c3.png";
 import imgIlluminatedDial from "../imports/Images/53e675b9b8d4a355c0e1756cc8d2f0cb1909f3c8.png";
 
