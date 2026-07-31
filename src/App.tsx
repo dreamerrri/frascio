@@ -6,6 +6,12 @@ import Section3 from "./components/Section3"
 import Section4 from "./components/Section4"
 import Section5 from "./components/Section5"
 import MultiCare from "./components/Multicare"
+import { DesignPhilosophy } from "./components/DesignPhilosophy"
+import { Catalog } from "./components/Catalog"
+import { TechSection } from "./components/Techsection"
+import { WallHung } from "./components/Wallhung"
+import { MarbleLifestyle } from "./components/Marblelifestyle"
+import { Footer } from "./components/Footer"
 
 export default function App() {
   return (
@@ -19,10 +25,17 @@ export default function App() {
         {/* <Features /> */}
         {/* next section component */}
          <Section2 />
-         <MultiCare />
+        
          <Section3 />
          <Section4 />
          <Section5 />
+         <MultiCare />
+         <DesignPhilosophy/>
+         <Catalog />
+         <TechSection />
+         <WallHung />
+         <MarbleLifestyle />
+         <Footer />
       </main>
     </>
     

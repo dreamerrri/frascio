@@ -48,7 +48,7 @@ export function TechSection() {
                 <img src={t.img} alt={t.tag} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400" />
               </div>
               <div>
-                <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-accent mb-2">
+                <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-black mb-2">
                   {t.tag}
                 </p>
                 <p className="font-['Space_Grotesk'] font-semibold text-[16px] text-foreground mb-1.5">
