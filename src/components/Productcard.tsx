@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import imgNovo from "../imports/Images/Catpic1.png";
 import imgLumi from "../imports/Images/Catpic2.png";
 import imgMultiCare from "../imports/Images/Catpic3.png";
@@ -102,35 +103,37 @@ function SpecRow({ label, value }: { label: string; value: string }) {
 
 export function ProductCard({ product }: { product: ProductSpec }) {
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200">
-      <div className="h-[260px] overflow-hidden bg-muted">
-        <img
-          src={product.img}
-          alt={`Frascio ${product.name} smart toilet`}
-          className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-500"
-        />
-      </div>
-      <div className="p-6 flex flex-col flex-1">
-        <p className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] text-black mb-1.5">
-          {product.sku}
-        </p>
-        <h3 className="font-['Space Grotesk'] font-semibold text-[22px] tracking-[-0.01em] text-foreground mb-2">
-          {product.name}
-        </h3>
-        <p className="font-['Inter'] text-[13px] leading-[1.6] text-muted-foreground mb-5 flex-1">
-          {product.desc}
-        </p>
-        <div className="space-y-0.5 mb-5">
-          {product.specs.map((s) => (
-            <SpecRow key={s.label} label={s.label} value={s.value} />
-          ))}
+    <Link to={`/product/${product.name.toLowerCase()}`} className="group">
+      <div className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200 cursor-pointer">
+        <div className="h-[260px] overflow-hidden bg-muted">
+          <img
+            src={product.img}
+            alt={`Frascio ${product.name} smart toilet`}
+            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+          />
         </div>
-        <div className="flex flex-wrap gap-1.5">
-          {product.tags.map((t) => (
-            <Badge key={t} variant="outline">{t}</Badge>
-          ))}
+        <div className="p-6 flex flex-col flex-1">
+          <p className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] text-black mb-1.5">
+            {product.sku}
+          </p>
+          <h3 className="font-['Space Grotesk'] font-semibold text-[22px] tracking-[-0.01em] text-foreground mb-2 group-hover:text-[#3fbfc7] transition-colors">
+            {product.name}
+          </h3>
+          <p className="font-['Inter'] text-[13px] leading-[1.6] text-muted-foreground mb-5 flex-1">
+            {product.desc}
+          </p>
+          <div className="space-y-0.5 mb-5">
+            {product.specs.map((s) => (
+              <SpecRow key={s.label} label={s.label} value={s.value} />
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {product.tags.map((t) => (
+              <Badge key={t} variant="outline">{t}</Badge>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
