@@ -36,7 +36,7 @@ export default function Header() {
 
           <NavigationMenuItem>
             <NavigationMenuLink href="/contact" className={navigationMenuTriggerStyle()}>
-              <span className="font-['IBM_Plex_Mono'] "> COMFORT </span>
+              <span className="font-['IBM_Plex_Mono'] "> CONTACT </span>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>

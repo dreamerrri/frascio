@@ -26,7 +26,7 @@ export function Footer() {
                 about specifying the right model for your space.
               </p>
               <a
-                href="#"
+                href="/contact"
                 className="inline-flex items-center gap-2 font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase bg-background text-foreground px-6 py-3.5 rounded-full hover:opacity-80 transition-opacity"
               >
                 Get in touch{" "}
@@ -79,7 +79,7 @@ export function Footer() {
                   Comfort
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   Contact

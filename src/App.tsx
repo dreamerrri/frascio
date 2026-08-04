@@ -14,6 +14,7 @@ import { WallHung } from "./components/Wallhung"
 import { MarbleLifestyle } from "./components/Marblelifestyle"
 import { Footer } from "./components/Footer"
 import ProductDetail from "./components/ProductDetail"
+import Contact from "./components/Contact"
 
 export default function App() {
   return (
@@ -42,6 +43,7 @@ export default function App() {
         </>
       } />
       <Route path="/product/:productName" element={<ProductDetail />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }
