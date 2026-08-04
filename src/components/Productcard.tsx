@@ -11,7 +11,7 @@ type ProductSpec = {
   sku: string;
   name: string;
   desc: string;
-  img: string;
+  images: string[];
   specs: { label: string; value: string }[];
   tags: string[];
 };
@@ -21,7 +21,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "61.01.001 — NOVO",
     name: "Novo",
     desc: "Smart toilet, floor mounted. Foot-sensor flip and flush, UV sterilisation, dual knob on both sides.",
-    img: imgNovo,
+    images: [imgNovo, imgLumi, imgZenn],
     specs: [
       { label: "Overall height", value: "860 mm" },
       { label: "Rough-in", value: "180 · 50–220 mm" },
@@ -33,7 +33,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "61.01.002 — LUMI",
     name: "Lumi",
     desc: "Sitting down, surrounded by fragrance. Built-in aromatherapy and a full-length ambient light bar.",
-    img: imgLumi,
+    images: [imgLumi, imgNovo, imgPure],
     specs: [
       { label: "Overall height", value: "940 mm" },
       { label: "Rough-in", value: "180 · 50–220 mm" },
@@ -45,7 +45,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "MultiCare — Bidet Seat",
     name: "MultiCare",
     desc: "Dual-mode anterior & posterior 37°C constant-temperature warm-water lavage for any household.",
-    img: imgMultiCare,
+    images: [imgMultiCare, imgZenn, imgVortex],
     specs: [
       { label: "Wash modes", value: "Front · Rear" },
       { label: "Water temp", value: "Constant 37°C" },
@@ -57,7 +57,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "61.01.003 — ZENN",
     name: "Zenn",
     desc: "Automatic lid opening, built-in foam shield and zero water-pressure limitation, with app control.",
-    img: imgZenn,
+    images: [imgZenn, imgMultiCare, imgNovo],
     specs: [
       { label: "Overall height", value: "940 mm" },
       { label: "Rough-in", value: "180 · 50–220 mm" },
@@ -69,7 +69,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "61.01.004 — VORTEX",
     name: "Vortex",
     desc: "Innovation meets daily comfort. Front-loading bidet, magic seat massage and side buttons for daily use.",
-    img: imgVortex,
+    images: [imgVortex, imgPure, imgLumi],
     specs: [
       { label: "Overall height", value: "1000 mm" },
       { label: "Rough-in", value: "180 · 50–220 mm" },
@@ -81,7 +81,7 @@ export const FLOOR_PRODUCTS: ProductSpec[] = [
     sku: "61.01.201 — PURE",
     name: "Pure",
     desc: "No water-pressure limit. One-click knob, 180° foam layer and built-in night light.",
-    img: imgPure,
+    images: [imgPure, imgVortex, imgZenn],
     specs: [
       { label: "Overall height", value: "830 mm" },
       { label: "Rough-in", value: "180 · Ø100 mm" },
@@ -107,7 +107,7 @@ export function ProductCard({ product }: { product: ProductSpec }) {
       <div className="bg-card border border-border rounded-lg overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-200 cursor-pointer">
         <div className="h-[260px] overflow-hidden bg-muted">
           <img
-            src={product.img}
+            src={product.images[0]}
             alt={`Frascio ${product.name} smart toilet`}
             className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
           />

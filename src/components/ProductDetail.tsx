@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { FLOOR_PRODUCTS } from "./Productcard";
+import { ImageCarousel } from "./ImageCarousel";
 
 export default function ProductDetail() {
   const { productName } = useParams<{ productName: string }>();
@@ -56,13 +57,8 @@ export default function ProductDetail() {
             initial={{ opacity: 0, x: -50 }}
             animate={imageInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="rounded-lg overflow-hidden bg-muted aspect-[4/5]"
           >
-            <img 
-              src={product.img} 
-              alt={`Frascio ${product.name} smart toilet`} 
-              className="w-full h-full object-cover" 
-            />
+            <ImageCarousel images={product.images} productName={product.name} />
           </motion.div>
 
           {/* Product Info */}
