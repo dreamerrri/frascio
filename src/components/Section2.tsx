@@ -1,33 +1,48 @@
-
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import section2 from "../imports/Images/section2.png"
 import { Badge } from "@/components/ui/badge"
 
 export default function Section2() {
+  const imageRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const imageInView = useInView(imageRef, { once: true, margin: "-100px" });
+  const textInView = useInView(textRef, { once: true, margin: "-100px" });
+
   return (
     <section className="w-full">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-8 items-center min-h-[700px]">
 
-        <div className="relative h-[400px] rounded-xl overflow-hidden bg-muted">
-
-
+        <motion.div
+          ref={imageRef}
+          initial={{ opacity: 0, x: -50 }}
+          animate={imageInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative h-[400px] rounded-xl overflow-hidden bg-muted"
+        >
      <img src={section2} className="absolute inset-0 w-full h-full object-cover" />
-
-</div>
-
+</motion.div>
 
 
-        <div className="flex flex-col gap-4">
+
+        <motion.div
+          ref={textRef}
+          initial={{ opacity: 0, x: 50 }}
+          animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col gap-4"
+        >
              <div className="flex items-center">
                <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
                <Badge className="ml-2">S400 Series</Badge>
-             </div> 
+             </div>
  <h1 className="font-semibold text-[50px]" >Soft light, drawn through the room.</h1>
          
 
 Light drifts through windows, weaving dynamic shadows over walls, flooring and Frascio sanitaryware. The subtle balance of light and shadow shapes a calm, unadorned elegant retreat — meticulous craftsmanship fusing architecture, tiles and bath products into one unified artistic space.
 
 All-round intelligent operation, eco water-saving flushing, zero water-pressure restriction, and built-in fragrance tablets for enduring fresh scent — the S400 Series translates spatial art into your everyday bathroom.
-        </div>
+        </motion.div>
 
       </div>
     </section>
