@@ -47,34 +47,6 @@ export function Footer() {
                 </svg>
               </a>
             </div>
-          {/* <div>
-            <h4 className="font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
-              Products
-            </h4>
-            <ul className="space-y-2">
-              {["Insignia", "MultiCare", "S400 Series", "Wall-Hung"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="font-['Inter'] text-[14px] text-muted-foreground hover:text-foreground transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-['IBM Plex Mono'] text-[11px] tracking-[0.08em] uppercase text-foreground mb-4">
-              Company
-            </h4>
-            <ul className="space-y-2">
-              {["About", "Technology", "Support", "Contact"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="font-['Inter'] text-[14px] text-muted-foreground hover:text-foreground transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div> */}
         </div>
         
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
@@ -102,13 +74,13 @@ export function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   Comfort
                 </a>
                 <a
                   href="#"
-                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-black/40 hover:text-black transition-colors"
+                  className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-white/40 hover:text-white transition-colors"
                 >
                   Contact
                 </a>
@@ -120,7 +92,7 @@ export function Footer() {
           
           <div className="flex gap-6 text-gray-600">
             {["Privacy", "Terms", "Cookies"].map((item) => (
-              <a key={item} href="#" className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground hover:text-foreground transition-colors">
+              <a key={item} href="#" className="font-['IBM Plex Mono'] text-[10px] tracking-[0.08em] uppercase text-muted-foreground hover:text-white transition-colors">
                 {item}
               </a>
             ))}

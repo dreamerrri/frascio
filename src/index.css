@@ -5,7 +5,6 @@
 @import "@fontsource/ibm-plex-mono";
 @import "@fontsource/space-grotesk";
 @import "@fontsource/inter";
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
