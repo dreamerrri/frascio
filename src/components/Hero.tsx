@@ -19,15 +19,17 @@ export default function Hero() {
             <span className="text-accent" style={{color:"#3fbfc7"}}>essential luxury.</span>
           </h1>
         
-        <p>
+        <p className="mb-6">
           Full-dimensional intelligent control <br />
           high-efficiency water-saving flushing, <br />
           and nano-glaze surfaces — <br />
           engineered so every ordinary bathroom moment <br />
           becomes an exquisite ritual.
         </p>
-      
-          <a href="#catalog">  <Button> Explore the Range</Button></a>  
+  <a href="#catalog">
+  <Button className="cursor-pointer">Explore the Range</Button>
+</a>
+          
           
       </div>
 
@@ -36,6 +38,13 @@ export default function Hero() {
 
 
      <img src={heroImg} className="absolute inset-0 w-full h-full object-cover" />
+
+     <div className="absolute bottom-5 left-5">
+<span className="inline-flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)] text-[#3fbfc7]"></span>
+<span className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase  text-[#3fbfc7]">Foot Trigger — Auto Open &amp; Flush</span>
+</span>
+     </div>
 
 </div>
 
