@@ -22,25 +22,25 @@ const itemVariants = {
 export default function Hero() {
   const { scrollY } = useScroll()
   const y3 = useTransform(scrollY, [0, 500], [0, 50])
-  const y4 = useTransform(scrollY, [0, 500], [0, 75])
-  return (
 
-   <section className="bg-background pt-[110px] pb-8 overflow-hidden">
-     
-      <div className="max-w-[1240px] mx-auto px-6 pb-0 md:px-12 grid md:grid-cols-2 gap-8 items-center min-h-[560px]">
-      
+
+  return (
+   <section className="bg-background pt-[110px] pb-0 overflow-hidden">
+
+      <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-8 items-center min-h-[560px]">
 
       <motion.div className="py-16" style={{ y: y3 }} variants={containerVariants} initial="hidden" animate="visible">
-                  <motion.div className="flex items-center" variants={itemVariants}>
-                  <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
-        <Badge className="ml-2">Frascio Sanitary 2026 collection</Badge>
+        <motion.div className="flex items-center" variants={itemVariants}>
+          <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+          <Badge className="ml-2">Frascio Sanitary 2026 collection</Badge>
         </motion.div>
-         <motion.h1 className="font-['Space_Grotesk'] font-semibold text-[64px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7" variants={itemVariants}>
+
+        <motion.h1 className="font-['Space_Grotesk'] font-semibold text-[64px] md:text-[80px] leading-[1.05] tracking-[-0.02em] text-foreground mt-6 mb-7" variants={itemVariants}>
             Comfort is{" "}
             <span className="text-accent" style={{color:"#3fbfc7"}}>essential luxury.</span>
-          </motion.h1>
+        </motion.h1>
 
-        <motion.p variants={itemVariants}>
+        <motion.p className="mb-6" variants={itemVariants}>
           Full-dimensional intelligent control <br />
           high-efficiency water-saving flushing, <br />
           and nano-glaze surfaces — <br />
@@ -48,65 +48,58 @@ export default function Hero() {
           becomes an exquisite ritual.
         </motion.p>
 
-          <motion.div variants={itemVariants}>
-          <a href="#catalog">  <Button> Explore the Range</Button></a>
-          </motion.div>
+        <motion.div variants={itemVariants}>
+          <a href="#catalog">
+            <Button className="cursor-pointer">Explore the Range</Button>
+          </a>
+        </motion.div>
 
       </motion.div>
 
+      <div className="relative h-[520px] rounded-xl overflow-hidden bg-muted">
+        <img src={heroImg} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute bottom-5 left-5">
+          <span className="inline-flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)] text-[#3fbfc7]"></span>
+            <span className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase text-[#3fbfc7]">Foot Trigger — Auto Open &amp; Flush</span>
+          </span>
+        </div>
+      </div>
 
-  <div className="relative h-[520px] rounded-xl overflow-hidden bg-muted">
+<div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2 border-t border-border mt-8">        <div className="py-7 px-6 border-r border-border text-Left">
+          <div className="flex items-center gap-2">
+            <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Tech</p>
+          </div>
+          <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Self Clean</p>
+          <p className="font-['Inter'] text-[13px] text-muted-foreground">Sterilize · anti-bacterial water spray</p>
+        </div>
 
+        <div className="py-7 px-6 border-r border-border text-Left">
+          <div className="flex items-center gap-2">
+            <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Comfort</p>
+          </div>
+          <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Smart Seating</p>
+          <p className="font-['Inter'] text-[13px] text-muted-foreground">Warm seat · soft closing</p>
+        </div>
 
-     <img src={heroImg} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="py-7 px-6 border-r border-border text-Left">
+          <div className="flex items-center gap-2">
+            <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Sensor</p>
+          </div>
+          <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Foot Trigger</p>
+          <p className="font-['Inter'] text-[13px] text-muted-foreground">Automatic open & flush</p>
+        </div>
 
-     <div className="absolute bottom-5 left-5">
-<span className="inline-flex items-center gap-1.5">
-<span className="w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)] text-[#3fbfc7]"></span>
-<span className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase  text-[#3fbfc7]">Foot Trigger — Auto Open &amp; Flush</span>
-</span>
-     </div>
+        <div className="py-7 px-6 border-border text-Left">
+          <div className="flex items-center gap-2">
+            <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase mb-3 text-[#3fbfc7]">Design</p>
+          </div>
+          <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Frascio Sanitary</p>
+          <p className="font-['Inter'] text-[13px] text-muted-foreground">Comfort is essential luxury</p>
+        </div>
+      </div>
 
-</div>
-
-	<motion.div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2" style={{ y: y4 }}>
-<div className="py-7 px-6 border-r border-border text-Left">
-  <div className="flex items-center gap-2">
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Tech</p>
-  </div>
-   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Self Clean</p>
-    <p className="font-['Inter'] text-[13px] text-muted-foreground">Sterilize · anti-bacterial water spray</p>
-</div>
-
-
-<div className="py-7 px-6 border-r border-border text-Left">
-  <div className="flex items-center gap-2">
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Comfort</p>
-  </div>
-   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Smart Seating</p>
-    <p className="font-['Inter'] text-[13px] text-muted-foreground">Warm seat · soft closing</p>
-</div>
-
-
-<div className="py-7 px-6 border-r border-border text-Left">
-  <div className="flex items-center gap-2">
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Sensor</p>
-  </div>
-   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Foot Trigger</p>
-    <p className="font-['Inter'] text-[13px] text-muted-foreground">Automatic open & flush</p>
-</div>
-
-
-<div className="py-7 px-6  border-border text-Left">
-  <div className="flex items-center gap-2">
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase mb-3 text-[#3fbfc7]">Design</p>
-  </div>
-   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Frascio Sanitary</p>
-    <p className="font-['Inter'] text-[13px] text-muted-foreground">Comfort is essential luxury</p>
-</div>
-</motion.div>
-
-    </div>
-    </section> 
+      </div>
+    </section>
   )
-}   
+}
