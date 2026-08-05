@@ -41,40 +41,44 @@ export default function Hero() {
 
 
 
-<div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2"> 
-<div className="py-7 px-6 border-r border-border text-Left">
-  <div className="flex items-center gap-2">
-    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
-  </div>
-   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
-    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
-</div>
+<div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2 border-t border-border mt-8"> 
 
 <div className="py-7 px-6 border-r border-border text-Left">
   <div className="flex items-center gap-2">
-    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Tech</p>
   </div>
-   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
-    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
+   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Self Clean</p>
+    <p className="font-['Inter'] text-[13px] text-muted-foreground">Sterilize · anti-bacterial water spray</p>
 </div>
+
+
 <div className="py-7 px-6 border-r border-border text-Left">
   <div className="flex items-center gap-2">
-    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Comfort</p>
   </div>
-   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
-    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
+   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Smart Seating</p>
+    <p className="font-['Inter'] text-[13px] text-muted-foreground">Warm seat · soft closing</p>
 </div>
+
+
 <div className="py-7 px-6 border-r border-border text-Left">
   <div className="flex items-center gap-2">
-    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
-    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] mb-3">Sensor</p>
   </div>
-   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
-    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
+   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Foot Trigger</p>
+    <p className="font-['Inter'] text-[13px] text-muted-foreground">Automatic open & flush</p>
 </div>
+
+
+<div className="py-7 px-6  border-border text-Left">
+  <div className="flex items-center gap-2">
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase mb-3 text-[#3fbfc7]">Design</p>
+  </div>
+   <p className="font-['Space_Grotesk'] font-semibold text-[18px] text-foreground mb-1">Frascio Sanitary</p>
+    <p className="font-['Inter'] text-[13px] text-muted-foreground">Comfort is essential luxury</p>
+</div>
+
+
 </div>
 
     </div>
