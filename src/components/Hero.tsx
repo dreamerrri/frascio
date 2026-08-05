@@ -21,11 +21,10 @@ const itemVariants = {
 
 export default function Hero() {
   const { scrollY } = useScroll()
-  const y1 = useTransform(scrollY, [0, 500], [0, 150])
-  const y2 = useTransform(scrollY, [0, 500], [0, -100])
+ 
   const y3 = useTransform(scrollY, [0, 500], [0, 50])
   const y4 = useTransform(scrollY, [0, 500], [0, 75])
-  const opacity = useTransform(scrollY, [0, 300], [1, 0])
+ 
   return (
 
    <section className="bg-background pt-[110px] pb-8 overflow-hidden">
