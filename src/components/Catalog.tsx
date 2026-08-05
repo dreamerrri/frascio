@@ -1,9 +1,14 @@
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { FLOOR_PRODUCTS, ProductCard } from './Productcard';
 
 export function Catalog() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
   return (
-    <section id="catalog" className="bg-background py-28">
+    <section id="catalog" ref={sectionRef} className="bg-background py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
         <div className="flex items-end justify-between mb-14 gap-8">
           <div>
@@ -22,8 +27,15 @@ export function Catalog() {
           </a>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
-          {FLOOR_PRODUCTS.map((p) => (
-            <ProductCard key={p.name} product={p} />
+          {FLOOR_PRODUCTS.map((p, index) => (
+            <motion.div
+              key={p.name}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.6, delay: index * 0.5, ease: "easeOut" }}
+            >
+              <ProductCard product={p} />
+            </motion.div>
           ))}
         </div>
       </div>
