@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { FLOOR_PRODUCTS } from "./Productcard";
 import { ImageCarousel } from "./ImageCarousel";
+import Header from "./Header";
 
 export default function ProductDetail() {
   const { productName } = useParams<{ productName: string }>();
@@ -18,38 +19,33 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
+      
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="font-['Space Grotesk'] font-semibold text-[42px] text-foreground mb-4">
-            Product not found
-          </h1>
-          <Link to="/#catalog">
-            <Button variant="outline">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Catalog
-            </Button>
-          </Link>
-        </div>
+        <Header />
+        
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
+      
       {/* Header */}
-      <div className="border-b border-border">
-        <div className="max-w-[1240px] mx-auto px-6 md:px-12 py-6">
-          <Link to="/#catalog">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Catalog
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <div className="border-b border-border pt-[68px]">
+  <div className="max-w-[1240px] mx-auto px-6 md:px-12 py-6">
+    <Link to="/#catalog">
+      <Button variant="ghost" size="sm" className="cursor-pointer">
+        <ArrowLeft className="mr-2 h-4 w-4" />
+        Back to Catalog
+      </Button>
+    </Link>
+  </div>
+</div>
 
       {/* Product Detail */}
       <section className="py-16 md:py-24">
+        
         <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 md:gap-20 items-start">
           {/* Image */}
           <motion.div
