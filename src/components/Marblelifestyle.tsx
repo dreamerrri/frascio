@@ -1,13 +1,25 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import imgDialWindow from "../imports/Images/Craftpic3.png";
 import imgInternalTank from "../imports/Images/Craftpic1.png";
 import imgMarbleBathroom from "../imports/Images/Craftpic2.png";
 
 export function MarbleLifestyle() {
+  const textRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+  const textInView = useInView(textRef, { once: true, margin: "-100px" });
+  const imageInView = useInView(imageRef, { once: true, margin: "-100px" });
+
   return (
     <section className="bg-card py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_520px] gap-16 items-center">
-        <div>
+        <motion.div
+          ref={textRef}
+          initial={{ opacity: 0, x: 50 }}
+          animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
           <Badge className="ml-2">Craftsmanship</Badge>
           <h2 className="font-['Space Grotesk'] font-semibold text-[44px] leading-[1.08] tracking-[-0.01em] text-foreground mt-5 mb-6">
@@ -31,14 +43,20 @@ export function MarbleLifestyle() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="rounded-lg overflow-hidden bg-muted h-[580px]">
+        </motion.div>
+        <motion.div
+          ref={imageRef}
+          initial={{ opacity: 0, x: -50 }}
+          animate={imageInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="rounded-lg overflow-hidden bg-muted h-[580px]"
+        >
           <img
             src={imgMarbleBathroom}
             alt="Frascio smart toilet in marble bathroom"
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

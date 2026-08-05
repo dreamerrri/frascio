@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import imgAirFreshener from "../imports/Images/Techpic1.png";
 import imgVortexBowl from "../imports/Images/Techpic1.png";
@@ -5,6 +7,11 @@ import imgUvSpray from "../imports/Images/section92.png";
 import imgWaterPressure from "../imports/Images/section93.png";
 
 export function TechSection() {
+  const headerRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const headerInView = useInView(headerRef, { once: true, margin: "-100px" });
+  const gridInView = useInView(gridRef, { once: true, margin: "-100px" });
+
   const techs = [
     {
       img: imgAirFreshener,
@@ -35,14 +42,26 @@ export function TechSection() {
   return (
     <section className="bg-card py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <div className="mb-14">
-                         <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+        <motion.div
+          ref={headerRef}
+          initial={{ opacity: 0, y: 30 }}
+          animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="mb-14"
+        >
+          <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
           <Badge className="ml-2">Core Technology</Badge>
           <h2 className="font-['Space Grotesk'] font-semibold text-[42px] leading-[1.08] tracking-[-0.01em] text-foreground mt-4 max-w-[520px]">
             Built to outlast, engineered to surprise.
           </h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        </motion.div>
+        <motion.div
+          ref={gridRef}
+          initial={{ opacity: 0, y: 30 }}
+          animate={gridInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="grid md:grid-cols-2 gap-8"
+        >
           {techs.map((t) => (
             <div key={t.title} className="group flex gap-5 p-6 rounded-lg border border-border hover:border-accent/30 transition-colors duration-200">
               <div className="w-[120px] h-[90px] shrink-0 rounded-md overflow-hidden bg-muted">
@@ -61,7 +80,7 @@ export function TechSection() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

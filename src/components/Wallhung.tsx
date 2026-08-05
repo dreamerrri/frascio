@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 import imgSculptedBlack from "../imports/Images/Wallpic1.png";
@@ -8,6 +10,11 @@ import imgWallHungFrame from "../imports/Images/Wallpic5.png";
 import imgWallHungRound from "../imports/Images/Wallpic6.png";
 
 export function WallHung() {
+  const headerRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const headerInView = useInView(headerRef, { once: true, margin: "-100px" });
+  const gridInView = useInView(gridRef, { once: true, margin: "-100px" });
+
   const wallImages = [
     { src: imgSculptedBlack, alt: "Sculpted black Frascio smart toilet" },
     { src: imgDarkBathroom, alt: "Frascio smart toilet in dark styled bathroom" },
@@ -20,7 +27,13 @@ export function WallHung() {
   return (
     <section className="bg-background py-28">
       <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <div className="flex items-end justify-between mb-12 gap-8">
+        <motion.div
+          ref={headerRef}
+          initial={{ opacity: 0, y: 30 }}
+          animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex items-end justify-between mb-12 gap-8"
+        >
           <div>
             <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
             <Badge className="ml-2">Wall-Hung Series</Badge>
@@ -34,14 +47,20 @@ export function WallHung() {
             Floor-to-ceiling installation flexibility. The same dial. A lighter footprint.
 
           </span>
-        </div>
-        <div className="grid md:grid-cols-3 gap-4">
+        </motion.div>
+        <motion.div
+          ref={gridRef}
+          initial={{ opacity: 0, y: 30 }}
+          animate={gridInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="grid md:grid-cols-3 gap-4"
+        >
           {wallImages.map((img, i) => (
             <div key={i} className="rounded-lg overflow-hidden bg-muted aspect-[4/5]">
               <img src={img.src} alt={img.alt} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
