@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
-import imgDialWindow from "../imports/Images/OTHER.png";
-import imgInternalTank from "../imports/Images/OTHER.png";
-import imgMarbleBathroom from "../imports/Images/OTHER.png";
+import imgDialWindow from "../imports/Images/Craftpic3.png";
+import imgInternalTank from "../imports/Images/Craftpic1.png";
+import imgMarbleBathroom from "../imports/Images/Craftpic2.png";
 
 export function MarbleLifestyle() {
   return (

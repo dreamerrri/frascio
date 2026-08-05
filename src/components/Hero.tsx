@@ -42,18 +42,38 @@ export default function Hero() {
 
 
 <div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2"> 
-<div className="py-7 px-6 border-r border-border text-center">
-    Self Cleean
+<div className="py-7 px-6 border-r border-border text-Left">
+  <div className="flex items-center gap-2">
+    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+  </div>
+   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
+    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
 </div>
 
-<div className="py-7 px-6 border-r border-border text-center">
-    Self Cleean
+<div className="py-7 px-6 border-r border-border text-Left">
+  <div className="flex items-center gap-2">
+    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+  </div>
+   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
+    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
 </div>
-<div className="py-7 px-6 border-r border-border text-center">
-    Self Cleean
+<div className="py-7 px-6 border-r border-border text-Left">
+  <div className="flex items-center gap-2">
+    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+  </div>
+   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
+    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
 </div>
-<div className="py-7 px-6 border-r border-border text-center">
-    Self Cleean
+<div className="py-7 px-6 border-r border-border text-Left">
+  <div className="flex items-center gap-2">
+    <span className="inline-block w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)]" />
+    <p className="font-['IBM_Plex_Mono'] text-[10px] tracking-[0.1em] uppercase text-[#3fbfc7] leading-none">Tech</p>
+  </div>
+   <p className="font-[Space_Grotesk] font-semibold text-[18px]">Self Cleean</p>
+    <p className= "text-muted-foreground">Sterilize - anti-bacterial </p>
 </div>
 </div>
 

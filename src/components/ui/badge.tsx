@@ -9,12 +9,12 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase text-[#3fbfc7]"
+          "font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase text-[#3fbfc7]",
         // secondary:
         //   "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
         // destructive:
         //   "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
-        // outline: "text-foreground",
+        outline: "inline-flex items-center px-2 py-1 text-foreground font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase bg-secondary border border-border ",
       },
     },
     defaultVariants: {
@@ -35,3 +35,5 @@ function Badge({
 }
 
 export { Badge, badgeVariants }
+
+// Comments

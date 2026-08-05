@@ -1,11 +1,11 @@
 import { Badge } from "@/components/ui/badge";
 
-import imgSculptedBlack from "../imports/Images/Multipic1.png";
-import imgDarkBathroom from "../imports/Images/Multipic1.png";
-import imgWallHungMountain from "../imports/Images/Multipic1.png";
-import imgWallHungConcrete from "../imports/Images/Multipic1.png";
-import imgWallHungFrame from "../imports/Images/Multipic1.png";
-import imgWallHungRound from "../imports/Images/bgpic.png";
+import imgSculptedBlack from "../imports/Images/Wallpic1.png";
+import imgDarkBathroom from "../imports/Images/Wallpic2.png";
+import imgWallHungMountain from "../imports/Images/Wallpic3.png";
+import imgWallHungConcrete from "../imports/Images/Wallpic4.png";
+import imgWallHungFrame from "../imports/Images/Wallpic5.png";
+import imgWallHungRound from "../imports/Images/Wallpic6.png";
 
 export function WallHung() {
   const wallImages = [
