@@ -61,17 +61,14 @@ export default function Hero() {
   <div className="relative h-[520px] rounded-xl overflow-hidden bg-muted">
 
 
-     <motion.div 
-       style={{ y: y1 }}
-       className="absolute inset-0 w-full h-full"
-     >
-       <img src={heroImg} className="w-full h-full object-cover" />
-     </motion.div>
-     
-     <motion.div 
-       style={{ y: y2, opacity }}
-       className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none"
-     />
+     <img src={heroImg} className="absolute inset-0 w-full h-full object-cover" />
+
+     <div className="absolute bottom-5 left-5">
+<span className="inline-flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-sm bg-[#3fbfc7] shadow-[0_0_6px_rgba(63,191,199,0.7)] text-[#3fbfc7]"></span>
+<span className="font-['IBM_Plex_Mono'] text-[11px] tracking-[0.15em] uppercase  text-[#3fbfc7]">Foot Trigger — Auto Open &amp; Flush</span>
+</span>
+     </div>
 
 </div>
 
