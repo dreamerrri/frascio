@@ -1,32 +1,12 @@
-# React + TypeScript + Vite
+#Frascio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, premium product showcase website designed for Frascio.
 
-Currently, two official plugins are available:
+The website presents the Frascio 2026 Collection through a clean, editorial-inspired interface that emphasizes product design, visual presentation, and a sense of comfort and luxury. Rather than functioning as a conventional online store, the site focuses on creating a polished brand experience and showcasing the collection through immersive layouts, typography, imagery, and subtle motion.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Running it locally
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
